@@ -1,18 +1,22 @@
 <html>
-<head>
-  <title>Grocery Sum Calculator</title>
-</head>
-<body>
-  <h1>Grocery Sum Calculator</h1>
-  <label for="grocery_1">Enter the first grocery value: </label>
-  <input type="number" id="grocery_1"><br><br>
+  <head>
+    <title>Grocery Sum Calculator</title>
+  </head>
+  <body>
+    <h1>Grocery Sum Calculator</h1>
+    <label for="grocery_1">Enter the first grocery value: </label>
+    <input type="number" id="grocery_1" /><br /><br />
 
-  <label for="grocery_2">Enter the second grocery value: </label>
-  <input type="number" id="grocery_2"><br><br>
+    <label for="grocery_2">Enter the second grocery value: </label>
+    <input type="number" id="grocery_2" /><br /><br />
 
-  <button onclick="sumGroceries(parseFloat(grocery_1.value),parseFloat(grocery_2.value),'result')">Calculate total grocery cost</button><br><br>
+    <button
+      onclick="sumGroceries(parseFloat(grocery_1.value),parseFloat(grocery_2.value),'result')"
+    >
+      Calculate total grocery cost</button
+    ><br /><br />
 
-  <p id="result"></p>
-<script src="./grocery_tracker.js"></script>
-</body>
+    <p id="result"></p>
+    <script src="./grocery_tracker.js"></script>
+  </body>
 </html>

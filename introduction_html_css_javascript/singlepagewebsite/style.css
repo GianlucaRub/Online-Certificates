@@ -1,26 +1,27 @@
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 /* Navigation Bar */
 
 #home {
-  background-color:  #0026bc;
+  background-color: #0026bc;
   padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
+  margin-left: -1cm;
+  margin-right: -1cm;
   margin-top: 0cm;
   padding-top: 0.5cm;
   padding-bottom: 2.5cm;
   height: 5mm;
- }
+}
 
 .topmenu {
   color: lightgray;
   margin: 10px;
   padding: 20px;
   font-size: 20px;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .topmenu:hover {
@@ -38,7 +39,7 @@ body {
 .profile_name {
   float: left;
   padding-left: 2cm;
-  color:#fff;
+  color: #fff;
   font-size: 25px;
 }
 
@@ -48,13 +49,12 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row;
-
 }
 
 .contact_info img {
-  width:25px;
+  width: 25px;
   margin-right: 10px;
-  float:left;
+  float: left;
 }
 
 /* Titles */
@@ -148,7 +148,7 @@ h2 {
   margin-block-start: 8px;
   margin-block-end: 5px;
   font-weight: bold;
-} 
+}
 
 .skills p {
   align-items: center;
@@ -156,7 +156,7 @@ h2 {
   color: gray;
   margin-block-start: 5px;
   margin-block-end: 5px;
-} 
+}
 
 .flex_center {
   display: flex;
@@ -213,9 +213,9 @@ h2 {
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
-  border:1px solid gray;
+  border: 1px solid gray;
   font-size: 18px;
-  height:150px
+  height: 150px;
 }
 
 .recommendation span {
@@ -226,7 +226,7 @@ h2 {
 
 /* Scroll to Top Button */
 
-.iconbutton{
+.iconbutton {
   width: 48px;
   height: 48px;
   border-radius: 100%;
@@ -243,12 +243,12 @@ h2 {
 /* Form Pop-up */
 
 .popup {
-  width:400px;
+  width: 400px;
   background-color: #e8bcf0;
   border-radius: 3mm;
   top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   position: fixed;
   /* padding: 30px; */
@@ -286,19 +286,21 @@ h2 {
 
 /* Recommendation Form */
 
-input, textarea {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  margin: 10px;  
-  width:100%;
+input,
+textarea {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  margin: 10px;
+  width: 100%;
 }
 
 fieldset {
   display: flexbox;
   align-content: center;
-  justify-content: center;  
-  padding: 25px; 
-  margin-left: 50px; 
-  margin-right: 50px;   
+  justify-content: center;
+  padding: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
   border: thin solid white;
   width: 50%;
 }
