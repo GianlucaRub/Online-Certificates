@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style-type: none;
+  /* padding: 0; */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #ee3810;
+}
+
+.title {
+  display: flex;
+  gap: 5px;
+}
+body {
+  background-image: url('airplane_background.jpg');
+  background-size: 100vw auto;
+  background-repeat: repeat;
+  background-position: top;
+  background-color: #000; /* Fallback color */
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input[type='text'],
+input[type='number'],
+select {
+  width: 260px;
+  padding: 5px;
+}
+
+button {
+  padding: 7px 15px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ee3810;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.headline {
+  color: white;
+  width: 30%;
+  height: max-content;
+  margin: 7%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2%;
+  display: grid;
+  gap: 20%;
+}
+/* #results {
+  background-color: rgba(0, 0, 0, 0);
+} */
+
+.headline p {
+  padding-bottom: 10%;
+}
+
+.social-bar {
+  height: 150px;
+  display: grid;
+  padding-top: 5%;
+  gap: 5%;
+}
+
+.logo-social {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+}
+.border-bar {
+  border-left: 2px solid white; /* Creates a vertical line */
+  height: 200px;
+  margin: 0 15px; /* Optional: space around the bar */
+  margin-bottom: 30px;
+}
+
+.headline-about-us {
+  color: white;
+  width: 80%;
+  height: 500px;
+  margin: 7%;
+  margin-top: 3%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2%;
+  display: grid;
+  gap: 15%;
+}
+
+.headline-about-us p {
+  line-height: 1.6;
+}
+
+.team {
+  display: flex;
+  gap: 3%;
+}
+.team-member {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 5%;
+  padding: 1%;
+}
+.team-member-description {
+  display: grid;
+  gap: 5%;
+}
+.team-member-description button {
+  padding: 7px 15px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  font-weight: bold;
+  pointer-events: none;
+  cursor: not-allowed;
+  width: 50%;
+  margin-left: 15%;
+}
+.team-member-description p {
+  text-align: left;
+}
+
+.contact-us-container {
+  color: white;
+  width: 80%;
+  height: 400px;
+  margin: 7%;
+  margin-top: 3%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2%;
+  display: flex;
+  gap: 15%;
+}
+
+.contact-us-container div {
+  display: grid;
+  align-items: center;
+  height: 30%;
+  margin-top: 5%;
+}
+
+#contactForm {
+  display: grid;
+  height: 50%;
+  width: 50%;
+  gap: 10%;
+}
+
+#contactForm input {
+  width: 100%;
+}
+
+#contactForm button {
+  width: 102%;
+}
+#contactForm textarea {
+  width: 102%;
+  margin-top: 6%;
+}
+
+#results {
+  color: white;
+  width: 30%;
+  height: fit-content;
+  margin: 7%;
+  padding: 2%;
+  display: grid;
+  gap: 5%;
+  padding-bottom: 14%;
+}
