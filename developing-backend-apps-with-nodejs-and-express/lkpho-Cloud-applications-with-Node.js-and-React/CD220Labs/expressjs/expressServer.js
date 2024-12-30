@@ -1,4 +1,4 @@
- // Import the Express.js library
+// Import the Express.js library
 const express = require('express');
 
 // Create an instance of an Express application
@@ -8,27 +8,45 @@ const app = new express();
 let loginDetails = [];
 
 // Define the root route to send a welcome message
-app.get("/", (req, res) => {
-    res.send("Welcome to the express server");
+app.get('/', (req, res) => {
+  res.send('Welcome to the express server');
 });
 
 // Define a route to send login details as a JSON string
-app.get("/loginDetails", (req, res) => {
-    res.send(JSON.stringify(loginDetails));
+app.get('/loginDetails', (req, res) => {
+  res.send(JSON.stringify(loginDetails));
 });
 
 // Define a route to handle login requests and store login details
-app.post("/login/:name", (req, res) => {
-    loginDetails.push({ "name": req.params.name, "login_time": new Date() });
-    res.send(req.params.name + ", You are logged in!");
+app.post('/login/:name', (req, res) => {
+  loginDetails.push({ name: req.params.name, login_time: new Date() });
+  res.send(req.params.name + ', You are logged in!');
 });
 
 // Define a dynamic route to greet users by name
-app.get("/:name", (req, res) => {
-    res.send("Hello " + req.params.name);
+app.get('/:name', (req, res) => {
+  res.send('Hello ' + req.params.name);
+});
+
+// route to get the login of a specific month
+app.get('/fetchMonth/:num', (req, res) => {
+  let monthlogin = loginDetails.filter(
+    (elem) => elem.login_time.getMonth() + 1 == req.params.num
+  );
+  if (monthlogin.length === 0) {
+    res.send('No login in the selected month.');
+  } else {
+    res.send(monthlogin);
+  }
 });
 
 // Start the server and listen on port 3333
 app.listen(3333, () => {
-    console.log(`Listening at http://localhost:3333`);
+  console.log(`Listening at http://localhost:3333`);
 });
+
+// curl localhost:3333
+// curl -X POST http://localhost:3333/login/Jason
+// curl http://localhost:3333/Jason
+// curl http://localhost:3333/loginDetails
+// curl http://localhost:3333/fetchMonth/12

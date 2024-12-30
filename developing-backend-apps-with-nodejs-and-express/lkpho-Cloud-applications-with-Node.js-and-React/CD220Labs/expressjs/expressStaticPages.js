@@ -1,4 +1,4 @@
- // Import the Express.js library
+// Import the Express.js library
 const express = require('express');
 
 // Create an instance of an Express application
@@ -9,5 +9,8 @@ app.use(express.static('cad220_staticfiles'));
 
 // Start the server and listen on port 3333
 app.listen(3333, () => {
-    console.log(`Listening at http://localhost:3333`);
+  console.log(`Listening at http://localhost:3333`);
 });
+
+// in browser
+// http://localhost:3333/ReactCalc.html
